@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MangaShelf — Shadow Blade details</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-wrap">
+      <header>
+        <nav class="navbar navbar-expand-lg site-navbar sticky-top" aria-label="Main navigation">
+          <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+              <span class="brand-mark">M</span>
+              MangaShelf
+            </a>
+            <input type="checkbox" id="nav-toggle" />
+            <label class="nav-toggle-label" for="nav-toggle" aria-label="Open menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <div class="navbar-collapse-css ms-lg-auto">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                <li class="nav-item"><a class="nav-link active" href="details.html">Details</a></li>
+                <li class="nav-item"><a class="nav-link" href="reading.html">Reading</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="section-pad">
+        <div class="container">
+          <div class="details-layout">
+            <section class="details-header">
+              <p class="hero-badge mb-2">Featured title</p>
+              <h1 class="mb-1">Shadow Blade</h1>
+              <p class="muted mb-0">
+                Serialized weekly · Studio Night Ink · Score 9.4 · CSS Grid Areas layout
+                (header / sidebar / main / footer).
+              </p>
+            </section>
+
+            <aside class="details-sidebar">
+              <div class="cover-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1607604276583-e5825a042c00?auto=format&fit=crop&w=900&q=80"
+                  alt="Shadow Blade cover with city lights"
+                />
+                <span class="badge-abs badge-top">TOP</span>
+                <span class="badge-abs badge-age">18+</span>
+              </div>
+              <ul class="meta-list">
+                <li><strong>Author:</strong> Kei Moriyama</li>
+                <li><strong>Artist:</strong> Rina Holt</li>
+                <li><strong>Status:</strong> Ongoing</li>
+                <li><strong>Volumes:</strong> 11</li>
+                <li><strong>Chapters:</strong> 48</li>
+              </ul>
+            </aside>
+
+            <article class="details-main">
+              <h2>Synopsis</h2>
+              <p>
+                After a failed heist, courier Aoi inherits a blade that remembers every
+                life it has taken. Each Monday the city redraws its alleyways, and Aoi
+                must map the new streets before the guild finds her first.
+              </p>
+              <p>
+                The series mixes close-quarters sword fights with quiet rooftop meals
+                and a slow mystery about who is rewriting the city map.
+              </p>
+
+              <h2 class="mt-4">Genres</h2>
+              <ul class="genre-list">
+                <li>Action</li>
+                <li>Urban fantasy</li>
+                <li>Mystery</li>
+                <li>Drama</li>
+              </ul>
+
+              <h2 class="mt-4">Reading order</h2>
+              <ol class="chapter-list">
+                <li>Vol. 1 — The alley that moved</li>
+                <li>Vol. 2 — Names on the blade</li>
+                <li>Vol. 3 — Neon rain</li>
+                <li>Vol. 4 — Guild of glass</li>
+              </ol>
+
+              <div class="schedule-box mt-4">
+                <h3 class="h5">Release schedule</h3>
+                <p class="mb-1">New chapter every <strong>Monday 18:00</strong> (UTC+5).</p>
+                <p class="mb-0 muted">Next drop: Chapter 49 — “The map that lies.”</p>
+              </div>
+
+              <a class="btn btn-accent mt-4" href="reading.html">Start reading chapter 1</a>
+              <a class="btn btn-ghost mt-4 ms-2" href="catalog.html">Back to catalog</a>
+            </article>
+
+            <div class="details-local-footer">
+              Cover badges use <code>position: relative</code> on the wrapper and
+              <code>position: absolute</code> for TOP / 18+ labels. Layout regions are
+              named with <code>grid-template-areas</code>.
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <h3>MangaShelf</h3>
+              <p>Title pages, metadata, and weekly schedule blocks.</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Pages</h3>
+              <p>
+                <a href="index.html">Home</a> ·
+                <a href="catalog.html">Catalog</a> ·
+                <a href="details.html">Details</a> ·
+                <a href="reading.html">Reading</a> ·
+                <a href="contact.html">Contact</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h3>Contact</h3>
+              <p>hello@mangashelf.local<br />Almaty · Academic demo</p>
+            </div>
+          </div>
+          <p class="text-center mt-4 mb-0">&copy; 2026 MangaShelf. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

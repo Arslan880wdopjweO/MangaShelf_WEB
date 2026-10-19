@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MangaShelf — Register &amp; Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-wrap">
+      <header>
+        <nav class="navbar navbar-expand-lg site-navbar sticky-top" aria-label="Main navigation">
+          <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+              <span class="brand-mark">M</span>
+              MangaShelf
+            </a>
+            <input type="checkbox" id="nav-toggle" />
+            <label class="nav-toggle-label" for="nav-toggle" aria-label="Open menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <div class="navbar-collapse-css ms-lg-auto">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                <li class="nav-item"><a class="nav-link" href="details.html">Details</a></li>
+                <li class="nav-item"><a class="nav-link" href="reading.html">Reading</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="section-pad">
+        <div class="container">
+          <h1 class="section-title">Join MangaShelf</h1>
+          <p class="muted mb-4">
+            Assignment 4: registration + feedback forms, HTML5 validation, Bootstrap
+            grid (<code>col-md-6</code> / <code>col-12</code>), and sample
+            <code>is-valid</code> / <code>is-invalid</code> states.
+          </p>
+
+          <section class="form-card mb-4">
+            <h2 class="h3 mb-3">Create an account</h2>
+            <form action="#" method="get">
+              <div class="row g-3">
+                <div class="col-md-6 col-12">
+                  <label class="form-label" for="firstName">First Name</label>
+                  <input
+                    class="form-control is-valid"
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Aida"
+                    required
+                    minlength="2"
+                    maxlength="40"
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <label class="form-label" for="lastName">Last Name</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Kim"
+                    required
+                    minlength="2"
+                    maxlength="40"
+                  />
+                </div>
+                <div class="col-md-6 col-12">
+                  <label class="form-label" for="email">Email</label>
+                  <input
+                    class="form-control is-invalid"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="not-an-email"
+                    required
+                    maxlength="80"
+                  />
+                  <div class="invalid-feedback">Please provide a valid email.</div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <label class="form-label" for="country">Country</label>
+                  <select class="form-select" id="country" name="country" required>
+                    <option value="">Choose a country</option>
+                    <option value="kz" selected>Kazakhstan</option>
+                    <option value="jp">Japan</option>
+                    <option value="kr">South Korea</option>
+                    <option value="us">United States</option>
+                    <option value="fr">France</option>
+                  </select>
+                </div>
+                <div class="col-md-6 col-12">
+                  <label class="form-label" for="password">Password</label>
+                  <input
+                    class="form-control"
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    minlength="8"
+                    maxlength="32"
+                    placeholder="At least 8 characters"
+                  />
+                </div>
+                <div class="col-md-6 col-12">
+                  <label class="form-label" for="confirmPassword">Confirm Password</label>
+                  <input
+                    class="form-control"
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    required
+                    minlength="8"
+                    maxlength="32"
+                  />
+                </div>
+                <div class="col-12">
+                  <p class="form-label mb-2">Gender</p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required />
+                    <label class="form-check-label" for="genderFemale">Female</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" />
+                    <label class="form-check-label" for="genderMale">Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other" />
+                    <label class="form-check-label" for="genderOther">Other / prefer not to say</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p class="form-label mb-2">Favorite genres (hobbies)</p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="genreAction" name="genres" value="action" />
+                    <label class="form-check-label" for="genreAction">Action</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="genreFantasy" name="genres" value="fantasy" />
+                    <label class="form-check-label" for="genreFantasy">Fantasy</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="genreRomance" name="genres" value="romance" />
+                    <label class="form-check-label" for="genreRomance">Romance</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="genreHorror" name="genres" value="horror" />
+                    <label class="form-check-label" for="genreHorror">Horror</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="genreScifi" name="genres" value="scifi" />
+                    <label class="form-check-label" for="genreScifi">Sci-fi</label>
+                  </div>
+                </div>
+                <div class="col-12 d-flex gap-2">
+                  <button class="btn btn-accent" type="submit">Submit</button>
+                  <button class="btn btn-ghost" type="reset">Reset</button>
+                </div>
+                <div class="col-12">
+                  <p class="demo-note mb-0">
+                    First Name is shown in a valid state and Email in an invalid state
+                    so Bootstrap validation styles are visible without JavaScript.
+                    Native HTML5 checks still run on empty, short, or badly formatted fields.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="form-card">
+            <h2 class="h3 mb-3">Send us a message</h2>
+            <form action="#" method="get">
+              <div class="row g-3">
+                <div class="col-md-6 col-12">
+                  <label class="form-label" for="contactName">Your name</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="contactName"
+                    name="contactName"
+                    required
+                    minlength="2"
+                    maxlength="60"
+                  />
+                </div>
+                <div class="col-md-6 col-12">
+                  <label class="form-label" for="contactEmail">Your email</label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    id="contactEmail"
+                    name="contactEmail"
+                    required
+                    maxlength="80"
+                  />
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    minlength="10"
+                    maxlength="800"
+                    placeholder="Tell us which title we should add next..."
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-accent" type="submit">Send feedback</button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <h3>MangaShelf</h3>
+              <p>Forms use HTML5 attributes and Bootstrap 5.3 validation classes.</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Pages</h3>
+              <p>
+                <a href="index.html">Home</a> ·
+                <a href="catalog.html">Catalog</a> ·
+                <a href="details.html">Details</a> ·
+                <a href="reading.html">Reading</a> ·
+                <a href="contact.html">Contact</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h3>Contact</h3>
+              <p>hello@mangashelf.local<br />Almaty · Academic demo</p>
+            </div>
+          </div>
+          <p class="text-center mt-4 mb-0">&copy; 2026 MangaShelf. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
